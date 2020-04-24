@@ -5,16 +5,19 @@ import {
   HeaderContainer,
   LogoContainer,
   BrandContainer,
+  BrandName,
   OptionsContainer,
   OptionLink,
 } from './header.styles';
 
 const Header = () => (
   <HeaderContainer>
-    <LogoContainer to="/">
-      <Logo />
-    </LogoContainer>
-    <BrandContainer>On The Grill</BrandContainer>
+    <BrandContainer to="/">
+      <LogoContainer>
+        <Logo />
+      </LogoContainer>
+      <BrandName>On The Grill</BrandName>
+    </BrandContainer>
     <OptionsContainer>
       <OptionLink to="/menu">Menu</OptionLink>
     </OptionsContainer>

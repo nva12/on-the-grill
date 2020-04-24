@@ -11,16 +11,24 @@ export const HeaderContainer = styled.header`
   align-items: center;
 `;
 
-export const LogoContainer = styled(Link)`
-  width: 60px;
+export const BrandContainer = styled(Link)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding-left: 15px;
 `;
 
-export const BrandContainer = styled.h1`
+export const LogoContainer = styled.div`
+  width: 60px;
+  margin-right: 32px;
+`;
+
+export const BrandName = styled.h1`
   margin: 0;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Bangers', cursive;
   font-weight: 300;
-  font-size: 38px;
+  font-size: 54px;
+  letter-spacing: 2px;
 `;
 
 export const OptionsContainer = styled.nav`
