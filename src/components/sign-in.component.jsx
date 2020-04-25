@@ -8,6 +8,7 @@ import { signInWithGoogle } from '../firebase/firebase.utils';
 import {
   SignInContainer,
   SignInTitle,
+  SignInSubtitle,
   ButtonsBarContainer,
 } from './sign-in.styles';
 
@@ -37,7 +38,15 @@ class SignIn extends React.Component {
     return (
       <SignInContainer>
         <SignInTitle>I already have an account</SignInTitle>
-        <span>Sign in with your email and password</span>
+        <SignInSubtitle>Login with your Google account:</SignInSubtitle>
+        <ButtonsBarContainer>
+          <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+            Sign in with Google
+          </CustomButton>
+        </ButtonsBarContainer>
+        <SignInSubtitle>
+          Or sign in with your email and password:
+        </SignInSubtitle>
 
         <form onSubmit={this.handleSubmit}>
           <FormInput
@@ -58,10 +67,6 @@ class SignIn extends React.Component {
           />
           <ButtonsBarContainer>
             <CustomButton type="submit"> Sign in </CustomButton>
-            <CustomButton onClick={signInWithGoogle}>
-              {' '}
-              Sign in with Google{' '}
-            </CustomButton>
           </ButtonsBarContainer>
         </form>
       </SignInContainer>
