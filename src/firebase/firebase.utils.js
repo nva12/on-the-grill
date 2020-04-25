@@ -1,0 +1,24 @@
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyCk48muCJIs1amgyXio6zerxuc_T6t_kP0',
+  authDomain: 'on-the-grill.firebaseapp.com',
+  databaseURL: 'https://on-the-grill.firebaseio.com',
+  projectId: 'on-the-grill',
+  storageBucket: 'on-the-grill.appspot.com',
+  messagingSenderId: '833127332137',
+  appId: '1:833127332137:web:de419749e2323f4da51f38',
+};
+
+firebase.initializeApp(firebaseConfig);
+
+export const auth = firebase.auth();
+export const firestore = firebase.firestore();
+
+const provider = new firebase.auth.GoogleAuthProvider();
+provider.setCustomParameters({ prompt: 'select_account' });
+export const signInWithGoogle = () => auth.signInWithPopup(provider);
+
+export default firebase;
