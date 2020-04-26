@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'; // connect is a HOC
 import { ReactComponent as Logo } from '../assets/burger-icon.svg';
 import { auth } from '../firebase/firebase.utils';
 import {
@@ -31,4 +32,8 @@ const Header = ({ currentUser }) => (
   </HeaderContainer>
 );
 
-export default Header;
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+
+export default connect(mapStateToProps)(Header);
