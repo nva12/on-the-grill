@@ -1,28 +1,14 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
-import MENU_DATA from './menu.data.js';
+import CollectionsOverview from '../components/collections-overview.component';
+// import CollectionPage from '../collection.component';
 
-import CollectionPreview from '../components/collection-preview.component';
+const ShopPage = ({ match }) => (
+  <div>
+    <Route exact path={`${match.path}`} component={CollectionsOverview} />
+    {/* <Route path={`${match.path}/:collectionId`} component={CollectionPage} /> */}
+  </div>
+);
 
-class MenuPage extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      collections: MENU_DATA,
-    };
-  }
-
-  render() {
-    const { collections } = this.state;
-    return (
-      <div>
-        {collections.map(({ id, ...otherCollectionProps }) => (
-          <CollectionPreview key={id} {...otherCollectionProps} />
-        ))}
-      </div>
-    );
-  }
-}
-
-export default MenuPage;
+export default ShopPage;
