@@ -1,5 +1,5 @@
-const MENU_DATA = [
-  {
+const MENU_DATA = {
+  appetizers: {
     title: 'Appetizers',
     id: 100,
     routeName: 'appetizers',
@@ -42,7 +42,7 @@ const MENU_DATA = [
       },
     ],
   },
-  {
+  grill: {
     title: 'Grill',
     id: 200,
     routeName: 'grill',
@@ -91,7 +91,7 @@ const MENU_DATA = [
       },
     ],
   },
-  {
+  salads: {
     title: 'Salads',
     id: 300,
     routeName: 'salads',
@@ -122,7 +122,7 @@ const MENU_DATA = [
       },
     ],
   },
-  {
+  sides: {
     title: 'Sides',
     id: 400,
     routeName: 'sides',
@@ -159,7 +159,7 @@ const MENU_DATA = [
       },
     ],
   },
-  {
+  desserts: {
     title: 'Desserts',
     id: 500,
     routeName: 'desserts',
@@ -196,7 +196,7 @@ const MENU_DATA = [
       },
     ],
   },
-  {
+  drinks: {
     title: 'Drinks',
     id: 600,
     routeName: 'drinks',
@@ -239,6 +239,6 @@ const MENU_DATA = [
       },
     ],
   },
-];
+};
 
 export default MENU_DATA;
