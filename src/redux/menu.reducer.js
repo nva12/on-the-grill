@@ -1,9 +1,7 @@
-import MENU_DATA from './menu.data';
-
 import MenuActionTypes from './menu.types';
 
 const INITIAL_STATE = {
-  collections: MENU_DATA,
+  collections: null,
 };
 
 const menuReducer = (state = INITIAL_STATE, action) => {
