@@ -9,6 +9,11 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const BrandContainer = styled(Link)`
@@ -21,6 +26,10 @@ export const BrandContainer = styled(Link)`
 export const LogoContainer = styled.div`
   width: 60px;
   margin-right: 32px;
+
+  @media screen and (max-width: 800px) {
+    width: 50px;
+  }
 `;
 
 export const BrandName = styled.h1`
