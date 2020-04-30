@@ -14,6 +14,11 @@ export const HeaderContainer = styled.header`
     padding: 10px;
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    height: unset;
+  }
 `;
 
 export const BrandContainer = styled(Link)`
@@ -21,6 +26,10 @@ export const BrandContainer = styled(Link)`
   flex-direction: row;
   align-items: center;
   padding-left: 15px;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -28,7 +37,8 @@ export const LogoContainer = styled.div`
   margin-right: 32px;
 
   @media screen and (max-width: 800px) {
-    width: 50px;
+    width: 40px;
+    margin-right: 16px;
   }
 `;
 
@@ -38,6 +48,10 @@ export const BrandName = styled.h1`
   font-weight: 300;
   font-size: 54px;
   letter-spacing: 2px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 38px;
+  }
 `;
 
 export const OptionsContainer = styled.nav`

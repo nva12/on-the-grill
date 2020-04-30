@@ -5,8 +5,10 @@ export const LogInContainer = styled.div`
   text-align: center;
 
   @media screen and (max-width: 900px) {
-    width: 380px;
+    width: 90%;
+    max-width: 460px;
     margin: 0 auto;
+    text-align: unset;
   }
 `;
 
@@ -26,4 +28,12 @@ export const ButtonsBarContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 40px 0;
+
+  @media screen and (max-width: 900px) {
+    justify-content: flex-start;
+
+    button {
+      margin-left: 0;
+    }
+  }
 `;
