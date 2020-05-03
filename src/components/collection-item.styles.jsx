@@ -38,18 +38,14 @@ export const AddButton = styled(CustomButton)`
   position: absolute;
   top: 255px;
   display: none;
+  height: auto;
+  line-height: 20px;
+  padding: 10px 10px;
 
   @media screen and (max-width: 800px) {
     display: block;
     opacity: 0.9;
     min-width: unset;
-    padding: 0 10px;
-  }
-
-  @media screen and (max-width: 440px) {
-    height: auto;
-    line-height: 20px;
-    padding: 10px 10px;
   }
 `;
 
@@ -71,11 +67,11 @@ export const CollectionFooterContainer = styled.div`
 `;
 
 export const NameContainer = styled.span`
-  width: 90%;
+  width: 70%;
   margin-bottom: 15px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
+  width: 30%;
   text-align: right;
 `;

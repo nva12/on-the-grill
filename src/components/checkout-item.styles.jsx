@@ -17,10 +17,18 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const TextContainer = styled.span`
   width: 23%;
+  @media screen and (max-width: 480px) {
+    width: 30%;
+    font-size: 16px;
+  }
 `;
 
 export const QuantityContainer = styled(TextContainer)`
