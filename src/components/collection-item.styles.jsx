@@ -45,6 +45,12 @@ export const AddButton = styled(CustomButton)`
     min-width: unset;
     padding: 0 10px;
   }
+
+  @media screen and (max-width: 440px) {
+    height: auto;
+    line-height: 20px;
+    padding: 10px 10px;
+  }
 `;
 
 export const BackgroundImage = styled.div`

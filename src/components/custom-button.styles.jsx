@@ -33,6 +33,12 @@ const googleSignInStyles = css`
   &:hover {
     background-color: #357ae8;
   }
+
+  @media screen and (max-width: 330px) {
+    height: auto;
+    line-height: 26px;
+    padding: 12px 35px;
+  }
 `;
 
 const getButtonStyles = (props) => {
@@ -49,8 +55,8 @@ export const StyledButton = styled.button`
   height: 50px;
   letter-spacing: 0.5px;
   line-height: 50px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
+  padding: 0 35px;
+  font-size: 14px;
   text-transform: uppercase;
   font-family: 'McLaren', cursive;
 
